@@ -38,7 +38,7 @@ function play(question, correctOpt, answer) {
 
   var userAnswer = readlineSync.question(question);
 
-  if (userAnswer === correctOpt) {
+  if (userAnswer.toUpperCase() === correctOpt.toUpperCase()) {
     console.log("\n Great,you are right!\n");
     score = score + 1;
   }
